@@ -1,0 +1,63 @@
+{
+  "name": "react-native-video-zoom-control",
+  "version": "1.0",
+  "description": "A media player for the react-native-video component that has zoom and video resolution controls",
+  "license": "MIT",
+  "source": "src/index",
+  "main": "lib/commonjs/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "keywords": [
+    "react-native",
+    "react-native-video",
+    "react video controls",
+    "react video player",
+    "react native video zoom",
+    "react native video resolution",
+    "react native media console"
+  ],
+  "bugs": {
+    "url": "https://github.com/kevin-roan/react-native-video-zoom-control/issues"
+  },
+  "homepage": "https://github.com/kevin-roan/react-native-video-zoom-control/",
+  "author": "Kevin Roan (https://github.com/kevin-roan)",
+  "repository": "git@github.com:kevin-roan/react-native-video-zoom-control.git",
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "echo \"No test specified\" && exit 1",
+    "prepare": "bob build",
+    "release": "release-it"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.46.0"
+  },
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-native": "npm:react-native-tvos@0.68.2-5",
+    "react-native-builder-bob": "^0.18.2",
+    "react-native-reanimated": "^2.12.0",
+    "react-native-video": "6.0.0-beta.0",
+    "typescript": "^4.6.2"
+  },
+  "react-native": "src/index.ts",
+  "module": "lib/module/index.js",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__"
+  ],
+  "react-native-builder-bob": {
+    "source": "./src",
+    "output": "./lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
