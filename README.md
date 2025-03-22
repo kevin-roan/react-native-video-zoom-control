@@ -31,7 +31,7 @@ By default, tapping the screen anywhere will show the player controls. After 15s
 
 ## ⚙️ Installation
 
-Run `yarn add react-native-video react-native-media-console`
+Run `npm i react-native-video-zoom-control`
 
 Then follow installation instructions from [react-native-video][15].
 
