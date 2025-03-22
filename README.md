@@ -7,8 +7,6 @@
 
 VideoPlayer for the React Native `<Video/>` component at [react-native-video][15].
 
-[![demogif][16]][17]
-
 ### ⚠️ **Note:**
 >
 > We're only supporting the beta version of `react-native-video`. Since it looks stable enough except for the subtitles (which might still be a WIP at the time of writing), we're already using it in production at http://englishdiscoveries.net/
