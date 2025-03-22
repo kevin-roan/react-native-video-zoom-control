@@ -1,11 +1,9 @@
-# 🎮 react-native-media-console
+# 🎮 react-native-video-zoom-control
 
-[![platforms][3]][4]
-[![GitHub issues][5]][6]
-[![GitHub][7]][8]
-[![GitHub top language][9]][10]
-[![Maintenance][11]][12]
-[![npm][13]][14]
+
+> 
+> If you do not want video zoom and video resolution controls, use this package instead; https://github.com/LunatiqueCoder/react-native-media-console.git
+> 
 
 VideoPlayer for the React Native `<Video/>` component at [react-native-video][15].
 
@@ -26,11 +24,10 @@ This package contains a simple set of GUI controls that work with the [react-nat
 - [x] Rewind/Forward buttons
 - [x] Seekbar
 - [x] Title
-- [x] Error handling
 - [x] Timer
 - [x] Video Zoom feature
 - [x] Video Resolution controls
-- [ ] Rate button
+
 
 By default, tapping the screen anywhere will show the player controls. After 15s the controls disappear. Double tapping will toggle fullscreen.
 
