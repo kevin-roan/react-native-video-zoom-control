@@ -1,5 +1,3 @@
-/// <reference types="react-native" />
-/// <reference types="node" />
 import { Dispatch, SetStateAction } from 'react';
 interface ControlTimeoutProps {
     controlTimeout: ReturnType<typeof setTimeout>;
@@ -13,7 +11,7 @@ export declare const useControlTimeout: ({ controlTimeout, controlTimeoutDelay, 
     clearControlTimeout: () => void;
     resetControlTimeout: () => void;
     hideControls: () => void;
-    setClearTimeout: Dispatch<SetStateAction<boolean | undefined>>;
+    setClearTimeout: any;
     setControlTimeout: () => void;
 };
 export {};

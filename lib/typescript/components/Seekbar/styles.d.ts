@@ -3,6 +3,7 @@ export declare const styles: {
         alignSelf: "stretch";
         height: number;
         marginLeft: number;
+        marginBottom: number;
         marginRight: number;
     };
     track: {
@@ -10,12 +11,12 @@ export declare const styles: {
         height: number;
         position: "relative";
         top: number;
-        width: string;
+        width: "100%";
     };
     fill: {
         backgroundColor: string;
         height: number;
-        width: string;
+        width: "100%";
     };
     handle: {
         position: "absolute";

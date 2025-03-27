@@ -23,6 +23,11 @@ export declare const styles: {
         textAlign: "center";
     };
     seekBarContainer: {
-        width: string;
+        width: "100%";
+    };
+    bottomRightControls: {
+        display: "flex";
+        flexDirection: "row";
+        alignItems: "center";
     };
 };

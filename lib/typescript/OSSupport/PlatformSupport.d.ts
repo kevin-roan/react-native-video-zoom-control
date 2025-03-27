@@ -7,5 +7,5 @@ interface OSSupport {
     showControls: boolean;
     testID?: string;
 }
-export declare const PlatformSupport: ({ children, onScreenTouch, containerStyles, showControls, testID, }: OSSupport) => JSX.Element;
+export declare const PlatformSupport: ({ children, onScreenTouch, containerStyles, showControls, testID, }: OSSupport) => any;
 export {};

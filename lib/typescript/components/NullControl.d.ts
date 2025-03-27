@@ -1,2 +1,1 @@
-/// <reference types="react" />
-export declare const NullControl: () => JSX.Element;
+export declare const NullControl: () => any;

@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.ts"],"names":["VideoPlayer"],"mappings":"AAAA,SAAQA,WAAR,QAA0B,eAA1B;AAEA,cAAc,SAAd;AACA,eAAeA,WAAf","sourcesContent":["import {VideoPlayer} from './VideoPlayer';\n\nexport * from './types';\nexport default VideoPlayer;\n"]}
+{"version":3,"names":["VideoPlayer"],"sources":["index.ts"],"sourcesContent":["import {VideoPlayer} from './VideoPlayer';\n\nexport * from './types';\nexport default VideoPlayer;\n"],"mappings":"AAAA,SAAQA,WAAW,QAAO,eAAe;AAEzC,cAAc,SAAS;AACvB,eAAeA,WAAW"}
