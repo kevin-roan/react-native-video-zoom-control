@@ -14,7 +14,7 @@ const videoUrls = [
   { rendition: "https://example.com/video_720p.mp4", quality: "720p" },
   { rendition: "https://example.com/video_1080p.mp4", quality: "1080p" },
 ];
-
+```
 
 ### Thanks
 - https://github.com/LunatiqueCoder/react-native-media-console
