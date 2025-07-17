@@ -4,6 +4,8 @@
 |---------------------|-------------|-----------------------------------------------------------------------------|
 | `disableResolution` | `boolean`   | Set to `true` to disable the resolution switching UI in the media console. |
 | `videoUrls`         | `object[]`  | Array of video sources with different resolutions. See the example below.  |
+| `disableAllControls`         | `Set to `true` if you want to disable all the visible controls.  |
+
 
 ### Example
 
