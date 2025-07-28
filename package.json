@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-zoom-controls",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A video player overlay for React Native Video that supports pinch-to-zoom and multiple video renditions.",
   "license": "MIT",
   "source": "src/index",
