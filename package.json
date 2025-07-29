@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-zoom-control",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A video player overlay for React Native Video that supports pinch-to-zoom and multiple video renditions.",
   "license": "MIT",
   "source": "src/index",
@@ -31,9 +31,9 @@
   "bugs": {
     "url": "https://github.com/kevin-roan/react-native-video-zoom-control/issues"
   },
-  "homepage": "https://github.com/kevin-roan/react-native-video-control",
+  "homepage": "https://github.com/kevin-roan/react-native-video-zoom-control",
   "author": "Kevin Roan (https://github.com/kevin-roan)",
-  "repository": "git@github.com:kevin-roan/react-native-video-control.git",
+  "repository": "git@github.com:kevin-roan/react-native-video-zoom-control.git",
   "scripts": {
     "lint": "eslint ./src",
     "test": "echo \"No test specified\" && exit 1",
