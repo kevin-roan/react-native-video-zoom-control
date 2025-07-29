@@ -5,5 +5,5 @@ interface TimerProps {
     children: ReactNode;
     showControls: boolean;
 }
-export declare const Timer: ({ children, toggleTimer, resetControlTimeout, showControls, }: TimerProps) => any;
+export declare const Timer: ({ children, toggleTimer, resetControlTimeout, showControls, }: TimerProps) => JSX.Element;
 export {};

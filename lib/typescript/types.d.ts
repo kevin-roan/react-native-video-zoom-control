@@ -1,12 +1,12 @@
-import type { RefObject } from "react";
-import type { ViewStyle, StyleProp, Animated } from "react-native";
-import type Reanimated from "react-native-reanimated";
-import type { StyleProps } from "react-native-reanimated";
-import type { VideoRef, ReactVideoProps } from "react-native-video";
-export type WithRequiredProperty<Type, Key extends keyof Type> = Type & {
+import type { RefObject } from 'react';
+import type { ViewStyle, StyleProp, Animated } from 'react-native';
+import type Reanimated from 'react-native-reanimated';
+import type { StyleProps } from 'react-native-reanimated';
+import type { VideoRef, ReactVideoProps } from 'react-native-video';
+export declare type WithRequiredProperty<Type, Key extends keyof Type> = Type & {
     [Property in Key]-?: Type[Property];
 };
-export type VideoAnimations = {
+export declare type VideoAnimations = {
     AnimatedView: typeof Reanimated.View | typeof Animated.View;
     hideControlAnimation: () => void;
     showControlAnimation: () => void;
@@ -230,13 +230,11 @@ export interface VideoPlayerProps extends ReactVideoProps {
      * testID selector for testing
      */
     testID?: string;
-    /**
-    * seletedCallback
-    a callback function that gets called when the user clicks on the resolution modal,
-    params: resolution (that can be , auto,high,medium,low)
-    */
-    selectResolutionCallback?: (resolution: string) => void;
-    disableAllControls?: boolean;
-    disableResolution?: boolean;
-    videoUrls?: string[];
+  /** 
+  * callback that returns selected video resolution
+  * @default 'auto' 
+  */
+  selectResolutionCallback?: (resolution:string) =>  void;
+
+
 }

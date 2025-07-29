@@ -13,11 +13,5 @@ export declare const _styles: {
             bottom: number;
             left: number;
         };
-        dummy: {
-            height: "100%";
-            width: "100%";
-            top: number;
-            left: number;
-        };
     };
 };

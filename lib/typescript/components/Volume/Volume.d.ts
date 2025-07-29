@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { GestureResponderHandlers } from 'react-native';
 interface VolumeProps {
     volumeFillWidth: number;
@@ -5,5 +6,5 @@ interface VolumeProps {
     volumePosition: number;
     volumePanHandlers: GestureResponderHandlers;
 }
-export declare const Volume: ({ volumeFillWidth, volumePosition, volumeTrackWidth, volumePanHandlers, }: VolumeProps) => any;
+export declare const Volume: ({ volumeFillWidth, volumePosition, volumeTrackWidth, volumePanHandlers, }: VolumeProps) => JSX.Element;
 export {};

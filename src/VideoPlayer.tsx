@@ -29,14 +29,13 @@ import { PlatformSupport } from "./OSSupport";
 import { _onBack } from "./utils";
 import { _styles } from "./styles";
 import type { VideoPlayerProps, WithRequiredProperty } from "./types";
-import { ResolutionModal } from "react-native-media-console/src/components/VideoResolution";
-import { useEvent } from "react-native-reanimated";
+import { ResolutionModal } from "./components/VideoResolution";
 
 const volumeWidth = 150;
 const iconOffset = 0;
 
 const AnimatedVideoPlayer = (
-  props: WithRequiredProperty<VideoPlayerProps, "animations">
+  props: WithRequiredProperty<VideoPlayerProps, "animations">,
 ) => {
   const {
     animations,
@@ -81,7 +80,7 @@ const AnimatedVideoPlayer = (
     disableSeekbar = false,
     disablePlayPause = false,
     disableSeekButtons = false,
-    disableResolution=false,
+    disableResolution = false,
     disableOverlay,
     navigator,
     rewindTime = 15,
@@ -93,7 +92,7 @@ const AnimatedVideoPlayer = (
   const mounted = useRef(false);
   const _videoRef = useRef<VideoRef>(null);
   const controlTimeout = useRef<ReturnType<typeof setTimeout>>(
-    setTimeout(() => {})
+    setTimeout(() => {}),
   ).current;
   const tapActionTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [_resizeMode, setResizeMode] = useState<ResizeMode>(resizeMode);
@@ -101,7 +100,7 @@ const AnimatedVideoPlayer = (
   const [_muted, setMuted] = useState<boolean>(muted);
   const [_volume, setVolume] = useState<number>(volume);
   const [_isFullscreen, setIsFullscreen] = useState<boolean>(
-    isFullscreen || resizeMode === "cover" || false
+    isFullscreen || resizeMode === "cover" || false,
   );
   const [_showTimeRemaining, setShowTimeRemaining] =
     useState<boolean>(showTimeRemaining);
@@ -119,9 +118,11 @@ const AnimatedVideoPlayer = (
   const [currentTime, setCurrentTime] = useState(0);
   const [error, setError] = useState(false);
   const [duration, setDuration] = useState(0);
-  const [_disableResolutionControls,setDisableResolutionControls] = useState(false);
-  const [sourceUrl,setSourceUrl] = useState({
-    uri: ''})
+  const [_disableResolutionControls, setDisableResolutionControls] =
+    useState(false);
+  const [sourceUrl, setSourceUrl] = useState({
+    uri: "",
+  });
   const [isResolutionModalOpen, setResolutionModalOpen] = useState(false);
 
   const videoRef = props.videoRef || _videoRef;
@@ -149,16 +150,17 @@ const AnimatedVideoPlayer = (
       onSeek(obj);
     }
   };
-  const handleSource=(renditionSource:string)=>{
-    if(renditionSource === "defaultSource"){
+  const handleSource = (renditionSource: string) => {
+    if (renditionSource === "defaultSource") {
       setSourceUrl({
-        uri:''
-      })
-    }else{
-        setSourceUrl({
-        uri:renditionSource})
+        uri: "",
+      });
+    } else {
+      setSourceUrl({
+        uri: renditionSource,
+      });
     }
-  }
+  };
 
   const _onEnd = () => {
     if (currentTime < duration) {
@@ -258,7 +260,7 @@ const AnimatedVideoPlayer = (
       }
       return val;
     },
-    [seekerWidth]
+    [seekerWidth],
   );
 
   const constrainToVolumeMinMax = (val = 0) => {
@@ -277,7 +279,7 @@ const AnimatedVideoPlayer = (
       setSeekerOffset(positionValue);
       setSeekerFillWidth(positionValue);
     },
-    [constrainToSeekerMinMax]
+    [constrainToSeekerMinMax],
   );
 
   const setVolumePosition = (position = 0) => {
@@ -347,9 +349,9 @@ const AnimatedVideoPlayer = (
     setIsFullscreen(isFullscreen);
   }, [isFullscreen]);
 
-  useEffect(()=>{
-    setDisableResolutionControls(disableResolution)
-  },[disableResolution])
+  useEffect(() => {
+    setDisableResolutionControls(disableResolution);
+  }, [disableResolution]);
 
   useEffect(() => {
     setPaused(paused);
@@ -466,9 +468,8 @@ const AnimatedVideoPlayer = (
             muted={_muted}
             rate={rate}
             style={[_styles.player.video, styles.videoStyle]}
-            // if the user havent selected a rendition, use the default rendition 
-            // if the user selected auto, it will use the default link instead, check handleSource function 
-            source={sourceUrl.uri === '' ? source : sourceUrl}
+            // if the user havent selected a rendition, use the default rendition
+            source={sourceUrl.uri === "" ? source : sourceUrl}
           />
         </ReactNativeZoomableView>
 
@@ -503,8 +504,8 @@ const AnimatedVideoPlayer = (
                 />
                 {isResolutionModalOpen && showControls ? (
                   <ResolutionModal
-                      videoUrls={videoUrls}
-                      handleSource={handleSource}
+                    videoUrls={videoUrls}
+                    handleSource={handleSource}
                   />
                 ) : (
                   <PlayPause

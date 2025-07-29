@@ -14,7 +14,7 @@ import { Seekbar } from "./Seekbar";
 import { calculateTime } from "../utils";
 import type { VideoAnimations } from "../types";
 import { styles } from "./styles";
-import { VideoResolution } from "react-native-media-console/src/components/VideoResolution";
+import { VideoResolution } from "./components/VideoResolution";
 
 interface BottomControlsProps {
   showControls: boolean;

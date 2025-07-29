@@ -1,5 +1,7 @@
+import React from 'react';
+import { TouchableHighlight } from 'react-native';
 import type { VideoAnimations } from '../../types';
-export declare const playPauseRef: any;
+export declare const playPauseRef: React.RefObject<TouchableHighlight>;
 interface PlayPauseProps {
     animations: VideoAnimations;
     disablePlayPause: boolean;
@@ -11,5 +13,5 @@ interface PlayPauseProps {
     onPressForward: () => void;
     onPressRewind: () => void;
 }
-export declare const PlayPause: ({ animations: { AnimatedView, ...animations }, disablePlayPause, disableSeekButtons, paused, togglePlayPause, resetControlTimeout, showControls, onPressForward, onPressRewind, }: PlayPauseProps) => any;
+export declare const PlayPause: ({ animations: { AnimatedView, ...animations }, disablePlayPause, disableSeekButtons, paused, togglePlayPause, resetControlTimeout, showControls, onPressForward, onPressRewind, }: PlayPauseProps) => JSX.Element;
 export {};

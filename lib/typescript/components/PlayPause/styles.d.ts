@@ -11,7 +11,9 @@ export declare const styles: {
         zIndex: number;
     };
     playContainer: {
-        width: "10%";
+        width: string;
         alignItems: "center";
     };
+    play: {};
+    rewind: {};
 };

@@ -5,19 +5,18 @@ export const styles = StyleSheet.create({
     alignSelf: 'stretch',
     height: 28,
     marginLeft: 20,
-    marginBottom:10,
     marginRight: 20,
   },
   track: {
     backgroundColor: '#333',
-    height: 2,
+    height: 1,
     position: 'relative',
-    top: 14.5,
+    top: 14,
     width: '100%',
   },
   fill: {
     backgroundColor: '#FFF',
-    height: 4,
+    height: 1,
     width: '100%',
   },
   handle: {
@@ -29,7 +28,7 @@ export const styles = StyleSheet.create({
   circle: {
     borderRadius: 12,
     position: 'relative',
-    top: 10,
+    top: 8,
     left: -5,
     height: 12,
     width: 12,
