@@ -1,10 +1,10 @@
 ## Installation
 
 ```bash
-npm install react-native-video-zoom-control react-native-video
+npm install react-native-video-zoom-control
 ```
 
-> Dependencies
+### Dependencies
 
 ```bash
 npm install react-native-video
