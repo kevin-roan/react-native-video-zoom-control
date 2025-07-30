@@ -4,7 +4,7 @@
 
 <img width="432" height="241" alt="image" src="https://github.com/user-attachments/assets/a0b09b52-b430-4296-b2d1-c6684a14bcf8" />
 
-**"And you can pinch with two fingers to zoom."**
+**And you can pinch with two fingers to zoom into the video**
 
 ## Installation
 
