@@ -2,7 +2,9 @@
 
 <img width="436" height="249" alt="image" src="https://github.com/user-attachments/assets/b0e2030d-6c93-4be7-8e45-4779bcd2af23" />
 
+<img width="432" height="241" alt="image" src="https://github.com/user-attachments/assets/a0b09b52-b430-4296-b2d1-c6684a14bcf8" />
 
+**"And you can pinch with two fingers to zoom."**
 
 ## Installation
 
